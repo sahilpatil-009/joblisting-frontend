@@ -5,7 +5,7 @@ import Register from "./pages/Register";
 import Navbar from "./components/Navbar";
 import Dashboard from "./pages/Dashboard";
 import AddNewJob from "./pages/Recuriter/AddNewJob";
-import ViewDetails from "./pages/viewDetails";
+import ViewDetails from "./pages/ViewDetails";
 
 const App = () => {
   const [isLogin, setIslogin] = useState(false);
