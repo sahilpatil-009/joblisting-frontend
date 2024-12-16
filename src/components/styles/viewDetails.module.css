@@ -1,0 +1,163 @@
+
+.container{
+    background-color: #FFEFEF;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headLine{
+    text-align: center;
+    background-color: #fff;
+    width: 60%;
+    padding: 25px 5%;
+    margin: 20px 20px;
+    align-items: center;
+    margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.headLine h1{
+    font-weight: 600;
+    margin: 0 0;
+}
+
+.jobDetail{
+    background-color: #fff;
+    margin-top: 20px;
+    width: 60%;
+    padding: 25px 5%;
+    margin: 20px 20px;
+    word-wrap: break-word;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.detailhead{
+    display: flex;
+    gap: 10px;
+    height: 50px;
+}
+.detailhead p{
+    color: #999999;
+}
+.logo{
+    height: 100%;
+    display: flex;
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.jobTitle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.jobTitle button{
+    all: unset;
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size:16px;
+    color: #fff;
+    background-color: #ED5353;
+    cursor: pointer;
+}
+
+.Location{
+    color: #ED5353;
+    margin-top: 0;
+}
+
+.stipendDtal{
+    color: #999999;
+    width: 100%; 
+    display: flex;
+    gap: 40px;
+    flex-direction: row;
+    align-items: center ;
+}
+
+.stipendDtal div{
+    display: flex;
+    flex-direction: column;
+}
+
+.stipendDtal div:nth-child(1) p:nth-child(1){
+    margin: 0;
+    display: flex;
+    gap: 5px;
+}
+.stipendDtal div:nth-child(2) p:nth-child(1){
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.AboutCompany p{
+    color: #999999;
+    margin-top: 0;
+}
+
+.skillBox{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.skillBox p{
+    background-color: #FFEEEE;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+/* Responsive */
+
+@media only screen and (max-width:768px){
+    .headLine{
+        width: 80%;
+    }
+    .headLine h1{
+        margin: 0 0;
+        font-size: 20px;
+    }
+    .jobDetail{
+        width: 80%;
+        padding: 12px 12px;
+    }
+}
+
+@media only screen and (max-width:426px){
+    .jobTitle{
+        width: 100%;
+        flex-direction: column;
+    }
+    .jobTitle h1{
+        text-align: center;
+        font-size: 22px;
+    }
+    .jobTitle button{
+        width: 60%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .stipendDtal{
+        font-size: 13px;
+    }
+    .AboutCompany{
+        font-size: 15px;
+    }
+    .AboutCompany p{
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,100 @@
+.main {
+  width: 100%;
+  height: 120px;
+  background-color: #ed5353;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+
+.main h1 {
+  font-size: 25px;
+  font-weight: 600;
+  color: white;
+  margin-left: 100px;
+}
+
+.actionBtns {
+  display: flex;
+  align-items: center;
+  margin-right: 10%;
+  gap: 20px;
+}
+
+.login {
+  all: unset;
+  padding: 8px 25px;
+  border: 2px solid #ffff;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #ffff;
+  cursor: pointer;
+}
+
+.register {
+  all: unset;
+  padding: 8px 15px;
+  border: 2px solid #ffff;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #ed5353;
+  background-color: #ffff;
+  cursor: pointer;
+}
+
+.UserName {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 500px) {
+  .main {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+  }
+  .main h1 {
+    margin-left: 0px;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  .actionBtns {
+    width: 80%;
+    margin-right: 0%;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    font-size: 18px;
+  }
+  .UserName {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .main h1 {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  .UserName {
+    font-size: 14px;
+  }
+  .login {
+    font-size: 14px;
+    padding: 5px 20px;
+  }
+  .register {
+    font-size: 14px;
+    padding: 5px 20px;
+  }
+}

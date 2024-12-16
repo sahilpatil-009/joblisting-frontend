@@ -1,0 +1,29 @@
+.skill{
+    background-color: #FFEEEE;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 70%;
+    justify-content: space-between;
+}
+
+.skill p{
+    padding: 0px 15px;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill button{
+    all: unset;
+    height: 100%;
+    width: 30%;
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 200;
+    background-color: #FF6B6B;
+}

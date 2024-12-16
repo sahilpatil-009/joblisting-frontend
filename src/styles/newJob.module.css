@@ -1,0 +1,230 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+.main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  /* overflow: hidden; */
+}
+
+.job {
+  width: 60%;
+  height: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.formData {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.headtitle {
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+.headtitle h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.userInput {
+  /* border: 2px solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.optns {
+  width: 71%;
+  /* border: 2px solid black; */
+}
+
+.userInput label {
+  font-size: 16px;
+  width: 30%;
+}
+
+.userInput input {
+  all: unset;
+  padding: 5px 5px 5px 10px;
+  font-size: 15px;
+  border: 2px solid #c2c2c2;
+  border-radius: 5px;
+  width: 70%;
+}
+
+.userInput textarea {
+  all: unset;
+  border: 2px solid #c2c2c2;
+  padding: 5px 5px 5px 10px;
+  font-size: 15px;
+  border-radius: 5px;
+  width: 70%;
+}
+
+.userInput select {
+  float: left;
+  font-size: 15px;
+  align-items: center;
+  padding: 10px 10px;
+  color: gray;
+  outline: none;
+  border: 2px solid #e3e3e3;
+  border-radius: 5px;
+  width: 120px;
+}
+
+.userInputBtns {
+  width: 100%;
+}
+
+.userInputBtns button:nth-child(1) {
+  all: unset;
+  float: right;
+  background-color: #ed5353;
+  text-align: center;
+  color: #ffff;
+  width: 100px;
+  border-radius: 2px;
+  padding: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  margin: 0px 0px 0px 15px;
+  border-radius: 5px;
+}
+.userInputBtns button:nth-child(2) {
+  all: unset;
+  float: right;
+  border: 2px solid #c2c2c2;
+  color: #c2c2c2;
+  /* background-color: #C2C2C2; */
+  text-align: center;
+  width: 100px;
+  border-radius: 2px;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.worningMsg {
+  color: red;
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.submitBtn {
+  all: unset;
+  background-color: #ed5353;
+  text-align: center;
+  color: #ffff;
+  width: 180px;
+  border-radius: 2px;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 0px;
+  cursor: pointer;
+}
+.formBottom p a {
+  font-weight: 600;
+  color: #000;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* cover image css */
+.cover {
+  width: 40%;
+  height: 100%;
+  position: relative;
+}
+
+.imageSection {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.imageSection h1 {
+  position: absolute;
+  color: #ffff;
+  top: 5%;
+  left: 20%;
+  font-weight: 500;
+  user-select: none;
+}
+
+.imageSection img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Responsive */
+@media only screen and (max-width: 720px) {
+  .cover {
+    display: none;
+  }
+  .main {
+    height: 100%;
+    justify-content: center;
+  }
+
+  .job {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .formData {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  .headtitle{
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  .headtitle h1{
+    font-size: 25px;
+  }
+  .userInput {
+    width: 90%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .userInput label{
+    width: 100%;
+  }
+  .userInput input{
+    width: 100%;
+  }
+  .userInput textarea{
+    width: 100%;
+  }
+  .userInputBtns{
+    /* border: 2px solid black; */
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+  }
+}

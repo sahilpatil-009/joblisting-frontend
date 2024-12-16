@@ -1,0 +1,165 @@
+.main{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ControlBox{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 10px 2px rgba(255, 32, 32, 0.30);
+    margin-bottom: 50px;
+}
+
+.search{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    border: 2px solid #E3E3E3;
+    gap: 15px;
+    padding: 10px 10px;
+    margin: 20px 10px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.search input{
+    all: unset;
+    width: 100%;
+}
+
+.filter{
+    /* border: 2px solid black; */
+    width: 82%;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin: 25px 10px;
+}
+
+.skillsOptns{
+ font-size: 15px;
+ align-items: center;
+ padding: 10px 10px;
+ color: gray;
+ outline: none;
+ border: 2px solid #E3E3E3;
+ border-radius: 8px;    
+}
+
+.skillDisplay{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(3);
+    gap: 20px;
+    place-items: center;     
+}
+
+.actionBtn{
+    display: flex;
+    gap: 10px;
+    align-items: end;
+    justify-content: space-between;
+}
+
+
+.Applybtn{
+    all: unset;
+    background-color:#ED5353;
+    color: #fff;
+    padding: 5px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.ClearBtn{
+    all: unset;
+    color: #ED5353;
+    padding: 5px 15px;
+    font-size: 18px;
+    font-weight: 500;
+}
+*:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+.paging{
+    width: 20%;
+    /* border: 2px solid black; */
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.paging select{
+    padding: 10px 30px;
+}
+
+.paging button{
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+/* Responsive */
+
+@media only screen and (max-width:490px){
+    .ControlBox{
+        width: 80%;
+    }
+    .filter{
+        /* border: 2px solid black; */
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    .skillsOptns{
+        width: 80%;
+    }
+    .skillDisplay{
+            display: flex;
+            flex-direction: column;
+    }
+    .skillDisplay p{
+        margin: 0 0;
+    }
+    .actionBtn{
+        width: 100%;
+    }
+    .paging{
+        width: 50%;
+        flex-direction: column;
+    }
+    .paging button{
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width:360px){
+    .search{
+        margin: 10px 10px;
+        font-size: 15px;
+    }
+    .actionBtn{
+        gap: 0px;
+    }
+    .filter{
+        margin-top: 10px;
+    }
+    .skillsOptns{
+        font-size: 14px;
+    }
+    .Applybtn{
+        font-size: 13px;
+    }
+    .ClearBtn{
+        font-size: 15px;
+    }
+}

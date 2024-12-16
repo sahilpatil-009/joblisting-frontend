@@ -1,0 +1,206 @@
+.jobCard{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0 10px 2px rgba(255, 32, 32, 0.30);
+    margin-bottom: 30px;
+}
+
+.Cardetails{
+    display: flex;
+    align-items: start;
+    justify-items: start;
+    width: 60%;
+    height: 100%;
+}
+
+.logo{
+    width: 10%;
+    height: 100px;
+    margin-left: 20px;
+    padding-right: 10px;
+    display: flex;
+}
+
+.logo img{
+    padding-top: 20px;
+    width: 100%;
+    height: 50%;
+    object-fit:contain;
+}
+
+.details{
+    width: 40%;
+}
+
+.compDetails {
+    color: #9C9C9C;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.compDetails p{
+    margin: 0px;
+}
+
+.details .Jobrole{
+    width: 100%;
+    font-size: 20px;
+}
+
+.jobDetails{
+    display: flex;
+    align-items: start;
+    margin-bottom: 10px;
+    color: #ED5353;
+}
+
+.jobDetails p:nth-child(2){
+    margin-left: 20px;
+}
+
+.displaySkills{
+ width: 40%;
+ height: 100%;
+ margin: 10px 10px;
+}
+
+.Allskills{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.Allskills p{
+    text-align: center;
+    background-color: #FFEEEE;
+    padding: 5px 15px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.viewDtalBtn{
+    float:inline-end;
+    padding: 8px 15px;
+    border: 2px solid #ffff;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size:16px;
+    color: #fff;
+    background-color:#ED5353;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.editButton{
+    float:inline-end;
+    margin-right: 10px;
+    padding: 8px 15px;
+    border: 2px solid #ED5353;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size:16px;
+    color: #ED5353;
+    background-color:#fff;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* responisve  */
+
+@media only screen and (max-width:768px){
+    .jobCard{
+        flex-direction: column;
+    }
+    .Cardetails{
+        width: 100%;
+    }
+    .details{
+        width: 100%;
+    }
+    .compDetails{
+        flex-wrap: wrap;
+        width: 80%;
+    }
+    .compDetails p{
+        margin-bottom: 0px;
+    }
+    .displaySkills{
+        width: 100%;
+        align-items: start;
+        margin: 20px 20px;
+    }
+    .collectBtns{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        margin-left: 12%;
+    }
+    .jobDetails p{
+        margin-bottom: 0px;
+    }
+    .Allskills{
+        width: 80%;
+        justify-content: start;
+        margin-left: 12%;
+    }
+    .Allskills p{
+        margin: 0 0;
+    }
+}
+
+@media only screen and (max-width:426px){
+    .jobCard{
+        width: 80%;
+    }
+    .details .Jobrole{
+        width: 90%;
+        font-size: 20px;
+        word-wrap: break-word;
+        padding-left: 10px;
+    }
+    .logo{
+        width: 20%;
+        height: 70px;
+        margin-left: 10px;
+        padding-right: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .logo img{
+        width: 100%;
+        height: 60%;
+        object-fit:contain;
+        padding: 0;
+    }
+    .compDetails{
+        flex-wrap: wrap;
+        gap: 10px;
+        width: 80%;
+    }
+    .Allskills{
+        align-items: center;
+    }
+    .jobDetails p{
+        margin-bottom: 0px;
+    }
+    .collectBtns{
+        flex-wrap: wrap;
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        margin-left: 0%;
+    }
+    .collectBtns button{
+        margin-right: 0px;
+        width: 80%;
+    }
+}
