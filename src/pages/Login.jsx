@@ -88,8 +88,15 @@ const Login = () => {
               Sign in
             </button>
             <p>
-              Don't have an account?{" "}
+              Don't have an account?
               <a onClick={() => navigate("/register")}>Sign Up</a>{" "}
+            </p>
+            <p className={styles.loginCred}>
+              Testing Login Credentials
+              <br />
+              Email - spatil@gmail.com
+              <br />
+              Password - 1234 
             </p>
           </div>
         </form>

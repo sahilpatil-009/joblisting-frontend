@@ -100,7 +100,9 @@ body {
   height: 100%;
   object-fit: cover;
 }
-
+.loginCred{
+  color: #c2c2c2;
+}
 /* Responsive */
 @media only screen and (max-width: 720px) {
   .cover {

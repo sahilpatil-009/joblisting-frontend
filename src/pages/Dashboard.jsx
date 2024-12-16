@@ -12,6 +12,7 @@ const Dashboard = ({ isLogin }) => {
   const [allJobs, setAlljobs] = useState([]);
   const [skills, setSkills] = useState([]);
   const [userId, serUserId] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
   const [limit, setLimit] = useState(10);
   const [offset, setOffset] = useState(0);
   const [count, setCount] = useState(0);
@@ -54,6 +55,7 @@ const Dashboard = ({ isLogin }) => {
         const data = await res.json();
         setAlljobs(data.jobs);
         setCount(data.count);
+        setIsLoading(false);
       } else {
         console.error("Fail to fetch jobs", res);
       }
@@ -75,7 +77,7 @@ const Dashboard = ({ isLogin }) => {
     // set a new timer
     debounceTimerRef.current = setTimeout(() => {
       getAllJobs();
-    }, 1000);
+    }, 500);
   }, [getAllJobs]);
 
   // Effect to trigger debouned fetch
@@ -171,6 +173,9 @@ const Dashboard = ({ isLogin }) => {
           </div>
         </div>
       </div>
+      {
+        isLoading && <p>Loading... </p> 
+      }
       {allJobs.map((job) => (
         <JobCard
           key={job._id}
@@ -186,10 +191,14 @@ const Dashboard = ({ isLogin }) => {
           onClick={() => setOffset((offset) => offset - 1)}
           className={styles.Applybtn}
         >
-          <FaArrowAltCircleLeft size={20}/>
+          <FaArrowAltCircleLeft size={20} />
           Prev
         </button>
-        <select value={limit} className={styles.skillsOptns} onChange={(e) => setLimit(e.target.value)}>
+        <select
+          value={limit}
+          className={styles.skillsOptns}
+          onChange={(e) => setLimit(e.target.value)}
+        >
           <option value="10">10</option>
           <option value="15">15</option>
           <option value="20">20</option>
