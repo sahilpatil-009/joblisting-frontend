@@ -112,6 +112,7 @@
 .skillBox{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
@@ -134,6 +135,10 @@
     .jobDetail{
         width: 80%;
         padding: 12px 12px;
+    }
+    .skillBox{
+        flex-wrap: wrap;
+        gap: 10px;
     }
 }
 
@@ -159,5 +164,9 @@
     }
     .AboutCompany p{
         font-size: 12px;
+    }
+    .skillBox{
+        flex-wrap: wrap;
+        gap: 5px;
     }
 }
